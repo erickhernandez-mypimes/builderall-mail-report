@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Learning Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .gradient-bg {
+            background-color: #f8f9fa;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(202, 60%, 93%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 98% 99%, hsla(186, 60%, 90%, 0.3) 0px, transparent 50%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Outfit', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#0d1b2a',
+                        'brand-light': '#f8f9fa',
+                        'brand-accent': '#009688', // Professional Teal
+                        'brand-accent-light': '#e0f2f1',
+                    },
+                    boxShadow: {
+                        'subtle': '0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02)',
+                        'lifted': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="gradient-bg font-body text-brand-dark antialiased">
+    <div id="report-container" class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header -->
+        <header class="text-center py-8 sm:py-12 border-b border-gray-200/80 mb-8 sm:mb-12">
+            <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight text-brand-dark">
+                YouTube Learning Report
+            </h1>
+            <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">
+                An analysis of the "Red de Emprendimiento para Mujeres Mundo Mujer 2026" initiative.
+            </p>
+        </header>
+
+        <main class="space-y-16">
+
+            <!-- Video Section -->
+            <section class="scroll-reveal">
+                <h2 class="font-heading text-3xl font-semibold text-brand-dark mb-6 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-3 text-brand-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                    Original Video
+                </h2>
+                <div class="aspect-w-16 aspect-h-9 w-full rounded-xl bg-gray-200 shadow-lifted overflow-hidden border border-gray-300/50">
+                    <div class="flex items-center justify-center h-full text-center p-8 bg-gray-100">
+                        <div>
+                            <svg class="mx-auto h-12 w-12 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9A2.25 2.25 0 0013.5 5.25h-9A2.25 2.25 0 002.25 7.5v9A2.25 2.25 0 004.5 18.75z" />
+                            </svg>
+                            <h3 class="mt-2 text-lg font-medium text-gray-700 font-heading">Video Content Not Available</h3>
+                            <p class="mt-1 text-sm text-gray-500">The video for this report was not provided. This is a placeholder for the embedded content.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Educational Content Analysis Section -->
+            <section class="scroll-reveal">
+                <h2 class="font-heading text-3xl font-semibold text-brand-dark mb-6 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-3 text-brand-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+                    Educational Content Analysis
+                </h2>
+                <div class="glass-card p-6 sm:p-8 rounded-xl shadow-subtle space-y-5 text-gray-700 leading-relaxed text-base">
+                    <div>
+                        <h3 class="font-heading font-semibold text-lg text-brand-dark mb-2">Main Topic</h3>
+                        <p>The official launch of the "Red de Emprendimiento para Mujeres Mundo Mujer 2026," an initiative by Fundación Mundo Mujer to support female entrepreneurs in Colombia.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-semibold text-lg text-brand-dark mb-2">Introduction to the Network</h3>
+                        <p>The network's purpose is to empower, strengthen, and accompany Colombian women entrepreneurs in developing sustainable, innovative, and impactful businesses. Organized by Fundación Mundo Mujer, an NGO with 40 years of experience, it recognizes the crucial role of women in job creation and economic dynamism. The program offers integral and robust benefits throughout 2026.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-semibold text-lg text-brand-dark mb-2">The 2026 Call for Applications</h3>
+                        <p>Open to Colombian women entrepreneurs, the program is entirely free, though participants generally cover their own transportation. Prioritized sectors for 2026 include Agroindustry, Textile, Leather goods, Handicrafts, Software/Technology, and Natural Cosmetics. Applicants must have legal registration (e.g., Cámara de Comercio), and notifications for eligibility are expected by the third week of February.</p>
+                    </div>
+                     <div>
+                        <h3 class="font-heading font-semibold text-lg text-brand-dark mb-2">Testimonial and Benefits</h3>
+                        <p>Julieth Gutiérrez Bravo, an entrepreneur from the 2025 network, shares her experiences of growth, acquiring new clients, and learning crucial business skills. The network provides support, facilitates connections with funders and clients, and offers significant opportunities for business growth.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-semibold text-lg text-brand-dark mb-2">Overall Educational Relevance</h3>
+                        <p>The content offers highly relevant and practical information for aspiring and established women entrepreneurs in Colombia. It clearly outlines a significant opportunity for business development, detailing the program's purpose, benefits, eligibility, and application process. The inclusion of a successful entrepreneur's testimony adds credibility and inspiration, making the information actionable.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Section -->
+            <section class="scroll-reveal">
+                <h2 class="font-heading text-3xl font-semibold text-brand-dark mb-6 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-3 text-brand-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293z"></path></svg>
+                    Knowledge Check Quiz
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                    
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">1. What is the primary purpose of the "Red de Emprendimiento para Mujeres Mundo Mujer 2026" initiative?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">To impulse, strengthen, and accompany Colombian women entrepreneurs towards sustainable, innovative, and impactful businesses.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">2. Which is NOT a mentioned benefit of the network?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">Full coverage of all travel and accommodation expenses for participants.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">3. How long has Fundación Mundo Mujer focused on female entrepreneurship?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">A decade</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">4. Which sector is NOT prioritized for the 2026 call?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">Tourism</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">5. What is a key requirement for all applicants?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">They must have a legal registration, such as a Cámara de Comercio.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">6. What advice is given to jewelry entrepreneurs?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">She needs a strong portfolio to demonstrate the quality of her product and that she elaborates it herself.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">7. What costs are entrepreneurs expected to cover?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">Transportation from their department of origin and return.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-card glass-card p-6 rounded-xl shadow-subtle">
+                        <p class="font-heading font-semibold text-brand-dark mb-3">8. When are participant notifications expected?</p>
+                        <div class="flex items-start space-x-3 p-3 rounded-lg bg-brand-accent-light border border-brand-accent/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-brand-accent flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            <p class="text-gray-800 text-sm">By the third week of February.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
