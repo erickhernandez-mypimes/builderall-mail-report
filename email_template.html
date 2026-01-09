@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Invitación para Ti</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f8;
+            font-family: 'Poppins', 'Arial', sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .header {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #003366; /* Azul oscuro corporativo */
+        }
+        .header img {
+            max-width: 180px;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content {
+            padding: 40px 30px;
+            text-align: center;
+            color: #333333;
+        }
+        .content h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #009999; /* Teal corporativo */
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #FF6600; /* Naranja vibrante para CTA */
+            color: #ffffff;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .features {
+            padding: 20px 0;
+            background-color: #f0f8f8; /* Un fondo teal muy claro */
+        }
+        .feature-item {
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .feature-item h3 {
+            font-size: 20px;
+            color: #003366; /* Azul oscuro para consistencia */
+            margin-bottom: 10px;
+        }
+        .feature-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #009999; /* Iconos en teal */
+        }
+        .testimonial {
+            background-color: #e6f5f5; /* Fondo teal más claro */
+            padding: 30px;
+            text-align: center;
+        }
+        .testimonial p {
+            font-style: italic;
+            color: #003366;
+            font-size: 16px;
+            margin: 0;
+        }
+        .testimonial span {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #009999;
+        }
+        .footer {
+            background-color: #2c3e50; /* Un gris azulado oscuro */
+            color: #ecf0f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 24px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .content h1 {
+                font-size: 24px;
+            }
+            .cta-button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+            .features {
+                padding: 10px 0;
+            }
+            .feature-item {
+                width: 100% !important;
+                display: block;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9f6f8;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" class="container" border="0" cellspacing="0" cellpadding="0">
+                    <!-- LOGO HEADER -->
+                    <tr>
+                        <td class="header">
+                            <img src="https://www.fmm.org.co/public/img/png/Logo-FMM.png" alt="Logo FMM" style="max-width: 200px; filter: brightness(0) invert(1);">
+                        </td>
+                    </tr>
+                    <!-- BANNER PRINCIPAL -->
+                    <tr>
+                        <td class="banner">
+                            <img src="https://www.fmm.org.co/public/img/banners/banne_red_emprendimiento_mujeres_24-11-25-min.png" alt="Mujeres FMM conectando">
+                        </td>
+                    </tr>
+                    <!-- CONTENIDO PRINCIPAL -->
+                    <tr>
+                        <td class="content">
+                            <h1>Únete a la Red de Mujeres que Transforman</h1>
+                            <p>Hola [Nombre],<br>En FMM, creemos en el poder de la conexión y el crecimiento conjunto. Te invitamos a ser parte de nuestra comunidad, un espacio para inspirarte, colaborar y alcanzar nuevas metas.</p>
+                            <a href="https://www.fmm.org.co/" class="cta-button">Explora Nuestros Programas</a>
+                        </td>
+                    </tr>
+                    <!-- SECCIÓN DE CARACTERÍSTICAS -->
+                    <tr>
+                        <td class="features">
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="feature-item" width="33.33%">
+                                        <img src="https://img.icons8.com/plasticine/100/000000/idea.png" alt="Innovación" width="40" style="margin-bottom: 10px;">
+                                        <h3>Innovación</h3>
+                                        <p style="font-size: 14px; color: #555;">Participa en proyectos que generan impacto y fomentan la creatividad.</p>
+                                    </td>
+                                    <td class="feature-item" width="33.33%">
+                                        <img src="https://img.icons8.com/fluency/48/000000/rocket.png" alt="Crecimiento" width="40" style="margin-bottom: 10px;">
+                                        <h3>Crecimiento</h3>
+                                        <p style="font-size: 14px; color: #555;">Accede a capacitaciones y mentorías para tu desarrollo profesional.</p>
+                                    </td>
+                                    <td class="feature-item" width="33.33%">
+                                        <img src="https://img.icons8.com/plasticine/100/000000/conference-call.png" alt="Comunidad" width="40" style="margin-bottom: 10px;">
+                                        <h3>Comunidad</h3>
+                                        <p style="font-size: 14px; color: #555;">Conecta con una red de mujeres líderes y emprendedoras.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- TESTIMONIO -->
+                    <tr>
+                        <td class="testimonial">
+                            <p>"FMM ha sido un pilar en mi desarrollo. La red de apoyo y las oportunidades de crecimiento son invaluables."</p>
+                            <span>- Testimonio de una miembro de FMM</span>
+                        </td>
+                    </tr>
+                    <!-- FOOTER -->
+                    <tr>
+                        <td class="footer">
+                            <p class="social-icons">
+                                <a href="https://www.instagram.com/fundacionmundomujer/"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Instagram" width="24"></a>
+                                <a href="https://www.facebook.com/FundacionMundoMujer/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook" width="24"></a>
+                                <a href="https://www.linkedin.com/company/fundaci-n-mundo-mujer-oficial/about/?viewAsMember=true"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="24"></a>
+                            </p>
+                            <p>Has recibido este correo porque eres parte de la comunidad de FMM.</p>
+                            <p>
+                                <a href="[URL_DARSE_DE_BAJA]">Darse de baja</a> | <a href="https://www.fmm.org.co/politica-de-privacidad">Política de Privacidad</a>
+                            </p>
+                            <p>&copy; 2024 Fundación Mundo Mujer. Todos los derechos reservados.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
