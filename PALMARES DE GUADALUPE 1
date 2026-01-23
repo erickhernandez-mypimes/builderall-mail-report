@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palmares de Guadalupe | Apartamentos Campestres</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f6f8;
+        font-family: 'Poppins', 'Arial', sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    /* Banner sin padding extra para que la imagen cubra todo */
+    .banner {
+        width: 100%;
+        line-height: 0;
+    }
+    .banner img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+    }
+    .content {
+        padding: 40px 30px;
+        color: #333333;
+    }
+    .content h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #003366; /* Azul oscuro para elegancia inmobiliaria */
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #555555;
+    }
+    /* Caja para resaltar la ubicación */
+    .highlight-box {
+        background-color: #f0f8f8;
+        border-left: 5px solid #009999;
+        padding: 20px;
+        margin: 30px 0;
+        border-radius: 4px;
+    }
+    .highlight-box strong {
+        color: #009999;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .highlight-box span {
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .cta-container {
+        text-align: center;
+        margin: 40px 0;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #FF6600;
+        color: #ffffff !important;
+        padding: 16px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+    }
+    .cta-button:hover {
+        background-color: #e55a00;
+    }
+    
+    /* Sección de beneficios (Listado) */
+    .benefits-section {
+        background-color: #fffbf7; /* Un tono crema muy suave para calidez */
+        padding: 30px;
+        margin: 30px 0;
+        border-radius: 12px;
+        border: 1px solid #ffead6;
+    }
+    .benefits-section h3 {
+        color: #FF6600;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .benefit-item {
+        margin-bottom: 12px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .benefit-item:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #009999;
+        font-weight: bold;
+        font-size: 18px;
+        top: -2px;
+    }
+    
+    .footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .footer a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    .footer-divider {
+        margin: 20px auto;
+        width: 50px;
+        height: 2px;
+        background-color: #5d6d7e;
+    }
+
+    @media screen and (max-width: 600px) {
+        .content {
+            padding: 30px 20px;
+        }
+        .content h1 {
+            font-size: 24px;
+        }
+        .cta-button {
+            font-size: 16px;
+            padding: 14px 30px;
+            width: 80%; /* Botón más ancho en móvil */
+            box-sizing: border-box;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="banner">
+        <a href="https://palmaresdeguadalupe.com/" target="_blank">
+            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/4d75a0b0f9bfd339c02430d831150ca526dde0dedc8ad6d09d9500f7dc6a5ca3.png" alt="Palmares de Guadalupe - Fachada" style="border:0;">
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Hola, [FNAME]</h1>
+
+        <p>
+            <strong>Palmares de Guadalupe</strong> es un proyecto de apartamentos campestres en Villeta, Cundinamarca, diseñado cuidadosamente para unir la arquitectura moderna con la incomparable tranquilidad del campo.
+        </p>
+
+        <div class="benefits-section">
+            <h3>Lo mejor del proyecto</h3>
+            <div class="benefit-item">Diseño funcional y moderno.</div>
+            <div class="benefit-item">Zonas comunes pensadas para el descanso y la convivencia.</div>
+            <div class="benefit-item">Entorno natural y un clima privilegiado.</div>
+            <div class="benefit-item"><strong>Apartamento modelo listo para recorrido.</strong></div>
+        </div>
+
+        <div class="highlight-box">
+            <strong>📍 Ubicación estratégica</strong>
+            <span>A menos de 2 horas de Bogotá.</span>
+        </div>
+
+        <p style="text-align: center; font-size: 18px; font-weight: 600; color: #003366;">
+            Este es un proyecto para disfrutar hoy…<br> y valorar con el tiempo.
+        </p>
+
+        <div class="cta-container">
+            <a href="https://palmaresdeguadalupe.com/" class="cta-button" target="_blank">Ver el proyecto completo</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <strong>Aliado estratégico | Palmares de Guadalupe</strong>
+        
+        <div class="footer-divider"></div>
+        
+        <p>
+            Si ya no deseas recibir estos correos, puedes darte de baja aquí:<br>
+            <a href="[UNSUBSCRIBE_URL]" style="color: #bdc3c7;">Darse de baja</a>
+        </p>
+        
+        <p>
+            [COMPANY_FULL_ADDRESS]
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
