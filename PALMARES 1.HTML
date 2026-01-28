@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Palmares de Guadalupe | Apartamentos Campestres</title>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    /* Se sugiere usar Inter como fuente secundaria según manual, o Poppins/Arial por compatibilidad */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
 
     body {
         margin: 0;
         padding: 0;
-        background-color: #f9f6f8;
-        font-family: 'Poppins', 'Arial', sans-serif;
+        background-color: #f4f4f4; /* Fondo neutro suave */
+        font-family: 'Inter', 'Poppins', 'Arial', sans-serif;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
+        color: #473426; /* Café oscuro corporativo para texto base */
     }
     .container {
         width: 100%;
@@ -24,7 +26,6 @@
         overflow: hidden;
         box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
-    /* Banner sin padding extra para que la imagen cubra todo */
     .banner {
         width: 100%;
         line-height: 0;
@@ -37,12 +38,11 @@
     }
     .content {
         padding: 40px 30px;
-        color: #333333;
     }
     .content h1 {
         font-size: 26px;
         font-weight: 700;
-        color: #003366; /* Azul oscuro para elegancia inmobiliaria */
+        color: #3B5D2F; /* Verde Corporativo */
         margin-top: 0;
         margin-bottom: 20px;
         text-align: left;
@@ -53,23 +53,24 @@
         margin-bottom: 20px;
         color: #555555;
     }
-    /* Caja para resaltar la ubicación */
+    
+    /* Caja de Ubicación usando el Beige Corporativo */
     .highlight-box {
-        background-color: #f0f8f8;
-        border-left: 5px solid #009999;
+        background-color: #fcf8f3; /* Versión muy clara del beige */
+        border-left: 5px solid #DAC4A7; /* Beige Corporativo */
         padding: 20px;
         margin: 30px 0;
         border-radius: 4px;
     }
     .highlight-box strong {
-        color: #009999;
+        color: #3B5D2F; /* Verde Corporativo */
         font-size: 18px;
         display: block;
         margin-bottom: 5px;
     }
     .highlight-box span {
         font-size: 16px;
-        color: #333;
+        color: #473426; /* Café Corporativo */
     }
     
     .cta-container {
@@ -78,7 +79,7 @@
     }
     .cta-button {
         display: inline-block;
-        background-color: #FF6600;
+        background-color: #3B5D2F; /* Verde Corporativo como color principal de acción */
         color: #ffffff !important;
         padding: 16px 40px;
         border-radius: 50px;
@@ -86,22 +87,22 @@
         font-weight: 700;
         font-size: 18px;
         transition: background-color 0.3s;
-        box-shadow: 0 4px 6px rgba(255, 102, 0, 0.2);
+        box-shadow: 0 4px 6px rgba(59, 93, 47, 0.2);
     }
     .cta-button:hover {
-        background-color: #e55a00;
+        background-color: #2e4a25; /* Un tono más oscuro para el hover */
     }
     
-    /* Sección de beneficios (Listado) */
+    /* Sección de beneficios */
     .benefits-section {
-        background-color: #fffbf7; /* Un tono crema muy suave para calidez */
+        background-color: #f7fcf6; /* Fondo verdoso muy sutil (derivado del verde claro) */
         padding: 30px;
         margin: 30px 0;
         border-radius: 12px;
-        border: 1px solid #ffead6;
+        border: 1px solid #BBD8B1; /* Borde Verde Claro Corporativo */
     }
     .benefits-section h3 {
-        color: #FF6600;
+        color: #473426; /* Café Corporativo */
         font-size: 18px;
         margin-top: 0;
         margin-bottom: 20px;
@@ -115,34 +116,40 @@
         position: relative;
         font-size: 15px;
         line-height: 1.5;
+        color: #555;
     }
     .benefit-item:before {
         content: "✓";
         position: absolute;
         left: 0;
-        color: #009999;
+        color: #3B5D2F; /* Verde Corporativo */
         font-weight: bold;
         font-size: 18px;
         top: -2px;
     }
     
     .footer {
-        background-color: #2c3e50;
-        color: #ecf0f1;
+        background-color: #473426; /* Café Corporativo para el footer */
+        color: #DAC4A7; /* Texto en Beige Corporativo para contraste elegante */
         padding: 40px 20px;
         text-align: center;
         font-size: 13px;
         line-height: 1.6;
     }
-    .footer a {
+    .footer strong {
         color: #ffffff;
+        font-size: 14px;
+    }
+    .footer a {
+        color: #BBD8B1; /* Enlaces en Verde Claro */
         text-decoration: underline;
     }
     .footer-divider {
         margin: 20px auto;
         width: 50px;
-        height: 2px;
-        background-color: #5d6d7e;
+        height: 1px;
+        background-color: #DAC4A7;
+        opacity: 0.5;
     }
 
     @media screen and (max-width: 600px) {
@@ -153,9 +160,7 @@
             font-size: 24px;
         }
         .cta-button {
-            font-size: 16px;
-            padding: 14px 30px;
-            width: 80%; /* Botón más ancho en móvil */
+            width: 80%;
             box-sizing: border-box;
         }
     }
@@ -166,7 +171,7 @@
 <div class="container">
     <div class="banner">
         <a href="https://palmaresdeguadalupe.com/" target="_blank">
-            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/4d75a0b0f9bfd339c02430d831150ca526dde0dedc8ad6d09d9500f7dc6a5ca3.png" alt="Palmares de Guadalupe - Fachada" style="border:0;">
+            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/20ac1f949be6032e8991ad281f5b9660988a62437ff5aba68a9f0ab345d8a14e.png" alt="Palmares de Guadalupe" style="border:0;">
         </a>
     </div>
 
@@ -190,7 +195,7 @@
             <span>A menos de 2 horas de Bogotá.</span>
         </div>
 
-        <p style="text-align: center; font-size: 18px; font-weight: 600; color: #003366;">
+        <p style="text-align: center; font-size: 18px; font-weight: 600; color: #3B5D2F;">
             Este es un proyecto para disfrutar hoy…<br> y valorar con el tiempo.
         </p>
 
@@ -200,13 +205,13 @@
     </div>
 
     <div class="footer">
-        <strong>Aliado estratégico | Palmares de Guadalupe</strong>
+        <strong>Aliado estratégico | Fundación Mundo Mujer</strong>
         
         <div class="footer-divider"></div>
         
         <p>
             Si ya no deseas recibir estos correos, puedes darte de baja aquí:<br>
-            <a href="[UNSUBSCRIBE_URL]" style="color: #bdc3c7;">Darse de baja</a>
+            <a href="[UNSUBSCRIBE_URL]">Darse de baja</a>
         </p>
         
         <p>
