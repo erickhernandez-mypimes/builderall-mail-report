@@ -127,15 +127,17 @@
     
     .footer {
         background-color: #473426; /* Café Corporativo */
-        color: #ffffff; /* Blanco para máxima legibilidad */
+        color: #ffffff;
         padding: 40px 30px;
         text-align: center;
-        font-size: 14px; /* Letra un poco más grande */
+        font-size: 14px;
         line-height: 1.6;
     }
+    /* Estilo para que el enlace de baja se vea bien sobre el fondo oscuro */
     .footer a {
-        color: #DAC4A7; /* Beige para los enlaces */
+        color: #DAC4A7; 
         text-decoration: underline;
+        word-break: break-all; /* Evita que el link rompa el diseño móvil */
     }
     .footer-divider {
         margin: 20px auto;
@@ -203,7 +205,7 @@
         <div class="footer-divider"></div>
 
         <p style="margin-bottom: 15px;">
-           <a href="[UNSUBSCRIBE_URL]">Darse de baja</a>
+           <a href="[UNSUBSCRIBE_URL]" style="color: #DAC4A7;">[UNSUBSCRIBE_URL]</a>
         </p>
         
         <p>
