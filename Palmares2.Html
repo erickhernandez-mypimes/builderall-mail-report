@@ -14,10 +14,9 @@
         font-family: 'Inter', 'Poppins', 'Arial', sans-serif;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
-        color: #473426; /* Café oscuro corporativo */
+        color: #473426;
     }
 
-    /* Preheader */
     .preheader {
         display: none;
         max-height: 0px;
@@ -35,19 +34,18 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
 
-    /* MODIFICACIÓN: Header con fondo verde corporativo */
+    /* Encabezado: Línea delgada con el logo */
     .header {
-        padding: 35px 20px; /* Un poco más de padding vertical para la "línea gruesa" */
+        padding: 15px 20px; /* Padding reducido para que parezca una línea */
         text-align: center;
-        background-color: #3B5D2F; /* Color Verde Corporativo */
+        background-color: #3B5D2F; /* Verde Corporativo */
     }
 
     .header img {
-        width: 100%;
-        max-width: 200px; /* Un poco más grande para que destaque el blanco */
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        height: 35px; /* Altura controlada para mantener la sutileza de la línea */
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .content {
@@ -57,7 +55,7 @@
     .content h1 {
         font-size: 24px;
         font-weight: 700;
-        color: #3B5D2F; /* Verde Corporativo */
+        color: #3B5D2F;
         margin-top: 0;
         margin-bottom: 20px;
         text-align: center;
@@ -71,7 +69,6 @@
         color: #555555;
     }
 
-    /* Sección de Beneficios */
     .benefits-section {
         background-color: #f7fcf6;
         padding: 25px;
@@ -118,7 +115,7 @@
     }
 
     .footer {
-        background-color: #473426; /* Café Corporativo */
+        background-color: #473426;
         color: #ffffff;
         padding: 40px 30px;
         text-align: center;
@@ -142,7 +139,6 @@
     }
 
     @media screen and (max-width: 600px) {
-        .header { padding: 25px 20px; }
         .content { padding: 20px 20px 30px 20px; }
         .cta-button { width: 100%; box-sizing: border-box; }
     }
