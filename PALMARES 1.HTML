@@ -5,17 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Palmares de Guadalupe | Apartamentos Campestres</title>
 <style>
-    /* Se sugiere usar Inter como fuente secundaria según manual, o Poppins/Arial por compatibilidad */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
 
     body {
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4; /* Fondo neutro suave */
+        background-color: #f4f4f4;
         font-family: 'Inter', 'Poppins', 'Arial', sans-serif;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
-        color: #473426; /* Café oscuro corporativo para texto base */
+        color: #473426; /* Café oscuro corporativo */
     }
     .container {
         width: 100%;
@@ -54,23 +53,22 @@
         color: #555555;
     }
     
-    /* Caja de Ubicación usando el Beige Corporativo */
     .highlight-box {
-        background-color: #fcf8f3; /* Versión muy clara del beige */
+        background-color: #fcf8f3; 
         border-left: 5px solid #DAC4A7; /* Beige Corporativo */
         padding: 20px;
         margin: 30px 0;
         border-radius: 4px;
     }
     .highlight-box strong {
-        color: #3B5D2F; /* Verde Corporativo */
+        color: #3B5D2F; 
         font-size: 18px;
         display: block;
         margin-bottom: 5px;
     }
     .highlight-box span {
         font-size: 16px;
-        color: #473426; /* Café Corporativo */
+        color: #473426;
     }
     
     .cta-container {
@@ -79,7 +77,7 @@
     }
     .cta-button {
         display: inline-block;
-        background-color: #3B5D2F; /* Verde Corporativo como color principal de acción */
+        background-color: #3B5D2F;
         color: #ffffff !important;
         padding: 16px 40px;
         border-radius: 50px;
@@ -90,19 +88,18 @@
         box-shadow: 0 4px 6px rgba(59, 93, 47, 0.2);
     }
     .cta-button:hover {
-        background-color: #2e4a25; /* Un tono más oscuro para el hover */
+        background-color: #2e4a25;
     }
     
-    /* Sección de beneficios */
     .benefits-section {
-        background-color: #f7fcf6; /* Fondo verdoso muy sutil (derivado del verde claro) */
+        background-color: #f7fcf6;
         padding: 30px;
         margin: 30px 0;
         border-radius: 12px;
-        border: 1px solid #BBD8B1; /* Borde Verde Claro Corporativo */
+        border: 1px solid #BBD8B1;
     }
     .benefits-section h3 {
-        color: #473426; /* Café Corporativo */
+        color: #473426;
         font-size: 18px;
         margin-top: 0;
         margin-bottom: 20px;
@@ -122,45 +119,39 @@
         content: "✓";
         position: absolute;
         left: 0;
-        color: #3B5D2F; /* Verde Corporativo */
+        color: #3B5D2F;
         font-weight: bold;
         font-size: 18px;
         top: -2px;
     }
     
     .footer {
-        background-color: #473426; /* Café Corporativo para el footer */
-        color: #DAC4A7; /* Texto en Beige Corporativo para contraste elegante */
-        padding: 40px 20px;
+        background-color: #473426; /* Café Corporativo */
+        color: #ffffff; /* Blanco para máxima legibilidad */
+        padding: 40px 30px;
         text-align: center;
-        font-size: 13px;
+        font-size: 14px; /* Letra un poco más grande */
         line-height: 1.6;
     }
-    .footer strong {
-        color: #ffffff;
-        font-size: 14px;
-    }
     .footer a {
-        color: #BBD8B1; /* Enlaces en Verde Claro */
+        color: #DAC4A7; /* Beige para los enlaces */
         text-decoration: underline;
     }
     .footer-divider {
         margin: 20px auto;
-        width: 50px;
+        width: 100%;
+        max-width: 200px;
         height: 1px;
         background-color: #DAC4A7;
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     @media screen and (max-width: 600px) {
         .content {
             padding: 30px 20px;
         }
-        .content h1 {
-            font-size: 24px;
-        }
         .cta-button {
-            width: 80%;
+            width: 100%;
             box-sizing: border-box;
         }
     }
@@ -205,13 +196,14 @@
     </div>
 
     <div class="footer">
-        <strong>Aliado estratégico | Fundación Mundo Mujer</strong>
-        
+        <p style="font-size: 16px; font-weight: 700; margin-bottom: 20px; color: #DAC4A7;">
+            Aliado estratégico | Fundación Mundo Mujer
+        </p>
+
         <div class="footer-divider"></div>
-        
-        <p>
-            Si ya no deseas recibir estos correos, puedes darte de baja aquí:<br>
-            <a href="[UNSUBSCRIBE_URL]">Darse de baja</a>
+
+        <p style="margin-bottom: 15px;">
+           <a href="[UNSUBSCRIBE_URL]">Darse de baja</a>
         </p>
         
         <p>
