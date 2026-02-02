@@ -24,30 +24,18 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         .header {
-            padding: 25px 20px; /* Reducido el padding vertical */
+            padding: 0; /* Sin padding para que el logo banner ajuste perfecto */
             text-align: center;
             background-color: #F4F7F9;
         }
         .header img {
-            width: auto; /* Ancho automático */
-            max-width: 240px; /* Tamaño más compacto y banner */
+            width: 100%;
+            max-width: 600px; /* Tamaño de banner solicitado */
             height: auto;
             display: block;
-            margin: 0 auto;
-        }
-        .image-section {
-            text-align: center;
-            padding: 25px 20px 5px 20px; /* Espacio superior e inferior ajustado */
-        }
-        .image-section img {
-            width: 180px; /* Ancho fijo */
-            height: 180px; /* Alto fijo para cuadrado */
-            object-fit: cover; /* Mantiene la imagen centrada sin deformarse */
-            border-radius: 12px; /* Bordes redondeados suaves */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
         .content {
-            padding: 30px 35px 40px 35px; /* Padding ajustado */
+            padding: 40px 35px;
             color: #2C3E50;
         }
         .content h1 {
@@ -65,6 +53,18 @@
             padding: 20px;
             margin: 30px 0;
             border-radius: 4px;
+        }
+        /* Estilo para la imagen reubicada */
+        .inline-image {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .inline-image img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
         .benefits-section {
             background-color: #F4F7F9; 
@@ -111,7 +111,6 @@
         @media screen and (max-width: 600px) {
             .content { padding: 30px 20px; }
             .content h1 { font-size: 22px; }
-            .image-section { padding: 20px 20px 0 20px; }
             .cta-button { width: 85%; padding: 18px 20px; box-sizing: border-box; }
         }
     </style>
@@ -120,10 +119,6 @@
     <div class="container">
         <div class="header">
             <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/e441235830acb12c2020ba75f5bc7629fe42896e9e39436d490d39f191a0af8d.png" alt="Fisioterapia Avanzada">
-        </div>
-
-        <div class="image-section">
-            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/a940b2ac29c4ff54e54a30e5fa91aaa34fd187178bb93ffbf68b73d659a91af6.png" alt="Sesión de Fisioterapia">
         </div>
 
         <div class="content">
@@ -137,11 +132,15 @@
 
             <p>Las 8 o 9 horas sentado, las malas posturas y el estrés diario pasan factura más rápido de lo que crees.</p>
 
+            <div class="inline-image">
+                <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/a940b2ac29c4ff54e54a30e5fa91aaa34fd187178bb93ffbf68b73d659a91af6.png" alt="Tratamiento Fisioterapia">
+            </div>
+
             <div class="benefits-section">
-                <p style="margin-top:0; font-weight:700; color:#4562A4; text-align:center;">¿Cómo podemos ayudarte?</p>
-                <div class="benefit-item"><strong>Descarga muscular:</strong> Suelta la tensión acumulada.</div>
-                <div class="benefit-item"><strong>Terapia de cupping:</strong> Desinflama y activa tu circulación.</div>
-                <div class="benefit-item"><strong>Rehabilitación guiada:</strong> Para que el dolor no vuelva.</div>
+                <p style="margin-top:0; font-weight:700; color:#4562A4; text-align:center;">Por eso en Fisioterapia Avanzada trabajamos desde el alivio real:</p>
+                <div class="benefit-item"><strong>Descarga muscular</strong> para soltar la tensión acumulada.</div>
+                <div class="benefit-item"><strong>Terapia de cupping</strong> para desinflama y activar la circulación.</div>
+                <div class="benefit-item"><strong>Rehabilitación guiada</strong> para que el dolor no vuelva.</div>
             </div>
 
             <div class="cta-container">
