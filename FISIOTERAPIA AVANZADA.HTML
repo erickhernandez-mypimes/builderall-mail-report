@@ -24,30 +24,36 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         .header {
-            padding: 30px 20px;
+            padding: 25px 20px; /* Reducido el padding vertical */
             text-align: center;
-            background-color: #F4F7F9; /* Color claro del manual */
+            background-color: #F4F7F9;
         }
         .header img {
-            width: 100%;
-            max-width: 350px; /* Tamaño ajustado para el nuevo logo */
+            width: auto; /* Ancho automático */
+            max-width: 240px; /* Tamaño más compacto y banner */
             height: auto;
             display: block;
             margin: 0 auto;
         }
-        .banner img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .image-section {
+            text-align: center;
+            padding: 25px 20px 5px 20px; /* Espacio superior e inferior ajustado */
+        }
+        .image-section img {
+            width: 180px; /* Ancho fijo */
+            height: 180px; /* Alto fijo para cuadrado */
+            object-fit: cover; /* Mantiene la imagen centrada sin deformarse */
+            border-radius: 12px; /* Bordes redondeados suaves */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
         .content {
-            padding: 40px 35px;
+            padding: 30px 35px 40px 35px; /* Padding ajustado */
             color: #2C3E50;
         }
         .content h1 {
             font-size: 26px;
             font-weight: 700;
-            color: #4562A4; /* Azul Institucional */
+            color: #4562A4;
             margin-top: 0;
             margin-bottom: 25px;
             text-align: center;
@@ -55,7 +61,7 @@
         }
         .highlight-box {
             background-color: #FFFBE6;
-            border-left: 5px solid #F0DA27; /* Amarillo de marca */
+            border-left: 5px solid #F0DA27;
             padding: 20px;
             margin: 30px 0;
             border-radius: 4px;
@@ -101,14 +107,11 @@
             border-top: 1px solid #e0e0e0;
             line-height: 1.6;
         }
-        .footer a {
-            color: #4562A4;
-            text-decoration: none;
-        }
 
         @media screen and (max-width: 600px) {
             .content { padding: 30px 20px; }
             .content h1 { font-size: 22px; }
+            .image-section { padding: 20px 20px 0 20px; }
             .cta-button { width: 85%; padding: 18px 20px; box-sizing: border-box; }
         }
     </style>
@@ -116,10 +119,10 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/e3a5e04f4072d551e180f5f76051278bf767f7b3a66879cf2a6cdf6e86ec7925.png" alt="Fisioterapia Avanzada">
+            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/e441235830acb12c2020ba75f5bc7629fe42896e9e39436d490d39f191a0af8d.png" alt="Fisioterapia Avanzada">
         </div>
 
-        <div class="banner">
+        <div class="image-section">
             <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/a940b2ac29c4ff54e54a30e5fa91aaa34fd187178bb93ffbf68b73d659a91af6.png" alt="Sesión de Fisioterapia">
         </div>
 
