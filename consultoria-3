@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Estratégico - Mypimes.co</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+        
+        /* Estilos Base - MODO CLARO */
+        body { 
+            margin: 0; padding: 0; width: 100% !important; height: 100% !important; 
+            background-color: #F4F6F8; /* Gris muy suave para el fondo general */
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+            color: #333333;
+        }
+
+        .wrapper { width: 100%; table-layout: fixed; background-color: #F4F6F8; padding-bottom: 40px; }
+        
+        .main-container { 
+            background-color: #FFFFFF; /* Tarjeta Blanca */
+            margin: 0 auto; max-width: 640px; width: 100%; 
+            border-top: 5px solid #0BAC96; /* Acento de marca superior */
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 25px rgba(17, 38, 59, 0.08); /* Sombra elegante */
+        }
+
+        /* Tipografía de Marca Adaptada a Fondo Claro */
+        h1 { margin: 0 0 10px 0; font-size: 24px; font-weight: 800; color: #11263B; line-height: 1.2; letter-spacing: -0.5px; }
+        h2 { margin: 0 0 15px 0; font-size: 18px; font-weight: 700; color: #0BAC96; text-transform: uppercase; letter-spacing: 1px; }
+        p { margin: 0 0 18px 0; font-size: 16px; line-height: 1.6; color: #4a5568; font-weight: 400; }
+        strong { color: #11263B; font-weight: 700; }
+
+        /* Componentes de Noticia */
+        .news-alert {
+            background-color: #FFF4F4;
+            border-left: 4px solid #D32F2F;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .news-link {
+            font-size: 12px; color: #D32F2F; text-decoration: underline; font-weight: 600;
+        }
+
+        /* Listas de Valor */
+        .value-list { list-style: none; padding: 0; margin: 0 0 25px 0; }
+        .value-list li {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #F8FAFC;
+            border-radius: 8px;
+            border: 1px solid #E2E8F0;
+            display: flex;
+            align-items: flex-start;
+        }
+        .icon-box {
+            background-color: #11263B;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin-right: 15px; flex-shrink: 0;
+        }
+
+        /* Botón Principal */
+        .btn-primary {
+            display: block;
+            background-color: #0BAC96; 
+            color: #ffffff !important; text-decoration: none;
+            padding: 18px 30px; border-radius: 6px; font-weight: 700;
+            text-transform: uppercase; font-size: 15px; letter-spacing: 0.5px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(11, 172, 150, 0.2);
+        }
+
+        .footer { background-color: #11263B; padding: 30px; text-align: center; color: rgba(255,255,255,0.7); font-size: 12px; }
+        .footer a { color: #0BAC96; text-decoration: none; }
+        
+    </style>
+</head>
+<body>
+
+    <center class="wrapper">
+        <br>
+        
+        <div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+            El alza del salario mínimo impactará tus márgenes. La IA es tu única defensa escalable.
+        </div>
+
+        <table class="main-container" border="0" cellpadding="0" cellspacing="0">
+            
+            <tr>
+                <td style="padding: 30px 40px; text-align: left; border-bottom: 1px solid #E2E8F0;">
+                    <a href="https://mypimes.co" target="_blank">
+                        <img src="https://storage.googleapis.com/msgsndr/TflE3Je6BY5vwRAtoeGL/media/6960589cf5d48905aff32d0b.png" alt="Mypimes.co Logo" width="140" style="display: block;">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 40px;">
+                    
+                    <p>Estimado/a <strong>{{contact.first_name}}</strong>,</p>
+                    
+                    <p>La incertidumbre económica no es una variable que podamos controlar, pero nuestra eficiencia operativa sí. Recientemente, medios como Semana han alertado sobre un escenario complejo para el tejido empresarial colombiano:</p>
+
+                    <div class="news-alert">
+                        <h3 style="margin-top:0; color:#D32F2F; font-size:18px;">🛑 Alerta Macroeconómica 2026</h3>
+                        <p style="margin-bottom: 10px; font-size: 14px; color: #555;">
+                            Se proyecta una suspensión de acuerdos y un posible decreto que elevaría el <strong>Salario Mínimo por encima del 23%</strong>. Para una empresa de consultoría intensiva en capital humano, esto representa un golpe directo al margen neto.
+                        </p>
+                        <a href="https://www.semana.com/economia/macroeconomia/articulo/suspension-del-salario-minimo-2026un-nuevo-decreto-podria-subir-aun-mas-del-23/202650/" target="_blank" class="news-link">Leer noticia completa en Semana &rarr;</a>
+                    </div>
+
+                    <h1>La matemática es simple: Tienes dos opciones.</h1>
+                    <p>Ante un aumento del 23% en costos base, las empresas tradicionales subirán sus precios (perdiendo competitividad) o reducirán personal (perdiendo capacidad).</p>
+                    
+                    <p>Las consultoras inteligentes, sin embargo, eligen una tercera vía: <strong>La Hiper-Eficiencia con IA.</strong></p>
+                    
+                    <p>En <strong>Mypimes.co</strong> no implementamos tecnología por "moda". Implementamos sistemas que absorben la carga operativa para que tu talento humano se dedique a facturar, no a procesar datos.</p>
+
+                    <br>
+                    
+                    <h2>¿Cómo blindar tu operación hoy?</h2>
+                    
+                    <ul class="value-list">
+                        <li>
+                            <div class="icon-box">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/bullish.png" width="16" height="16">
+                            </div>
+                            <div>
+                                <strong style="display:block; color:#0BAC96; font-size:14px;">MARKETING: Costo de Adquisición vs. Nómina</strong>
+                                <span style="font-size:13px; color:#555;">Deja de contratar más juniors para crear contenido base. Implementamos flujos de IA que generan, programan y nutren leads automáticamente, reduciendo el CAC un 40%.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/money-transfer.png" width="16" height="16">
+                            </div>
+                            <div>
+                                <strong style="display:block; color:#6D3A8D; font-size:14px;">VENTAS: No pagues por "perseguir"</strong>
+                                <span style="font-size:13px; color:#555;">Tus consultores senior cuestan mucho para estar calificando prospectos fríos. Nuestros sistemas filtran y agendan solo reuniones de alta intención en sus calendarios.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/service.png" width="16" height="16">
+                            </div>
+                            <div>
+                                <strong style="display:block; color:#11263B; font-size:14px;">SERVICIO: 24/7 sin horas extra</strong>
+                                <span style="font-size:13px; color:#555;">Agentes de IA que resuelven dudas operativas de tus clientes en tiempo real, eliminando la necesidad de ampliar el turno nocturno de soporte.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <br>
+                    
+                    <div style="background-color: #F0FDFA; padding: 25px; border-radius: 8px; border: 1px solid #0BAC96; text-align: center;">
+                        <h3 style="margin-top: 0; color: #11263B;">Auditoría de "Blindaje Digital"</h3>
+                        <p style="font-size: 14px; margin-bottom: 20px;">
+                            No esperes al decreto. Analicemos hoy qué procesos de tu consultora están "quemando" presupuesto y son automatizables antes del cierre fiscal.
+                        </p>
+                        <a href="https://calendar.app.google/rR7DgKohgoHbTvNG6" class="btn-primary">
+                            Agendar Sesión Estratégica
+                        </a>
+                        <p style="margin-top: 15px; margin-bottom: 0; font-size: 12px; color: #777;">
+                            Sesión de 30 minutos sin costo para empresas B2B.
+                        </p>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="footer">
+                    <p style="margin-bottom: 10px;">
+                        <strong>Mypimes.co</strong><br>
+                        Carrera 23 # 80 - 42, Bogotá - Colombia<br>
+                        Transformación Digital con Resultados Medibles.
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/company/mypimes-co">LinkedIn</a> &nbsp;|&nbsp; 
+                        <a href="https://www.instagram.com/mypimes.co/">Instagram</a> &nbsp;|&nbsp; 
+                        <a href="#">Política de Datos</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+    </center>
+
+</body>
+</html>
