@@ -3,161 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruta 65 | Building Markets</title>
+    <title>Ruta 65 | Ser Digital</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
         body {
             margin: 0;
             padding: 0;
-            background-color: #f4f7f9;
-            font-family: 'Poppins', 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            font-family: 'Poppins', Helvetica, Arial, sans-serif;
         }
-        .container {
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f0f4f8;
+            padding-bottom: 40px;
+        }
+        .main-container {
             width: 100%;
             max-width: 600px;
-            margin: 20px auto;
+            margin: 0 auto;
             background-color: #ffffff;
-            border-radius: 16px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 40, 85, 0.1);
         }
-        .header {
-            padding: 40px 20px;
+        /* Banner dinámico con el logo integrado */
+        .hero-banner {
+            background: linear-gradient(135deg, #001a35 0%, #003a70 100%);
+            padding: 50px 20px;
             text-align: center;
-            /* Azul institucional de Building Markets extraído de la referencia */
-            background-color: #002855; 
+            color: #ffffff;
         }
-        .header img {
-            max-width: 180px;
+        .hero-banner img {
+            max-width: 220px;
+            margin-bottom: 20px;
         }
-        .banner img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .hero-title {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 0;
+            text-transform: uppercase;
         }
         .content {
-            padding: 40px 30px;
-            color: #333333;
+            padding: 40px 35px;
+            color: #2c3e50;
         }
-        .content h1 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #002855;
-            margin-top: 0;
-            margin-bottom: 20px;
-            text-align: center;
+        .content h2 {
+            font-size: 28px;
+            color: #003a70;
+            margin-bottom: 15px;
+            line-height: 1.2;
         }
         .content p {
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.7;
             margin-bottom: 20px;
         }
-        .highlight-box {
-            background-color: #e6f0f9;
-            border-left: 4px solid #0056b3;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-        .highlight-box strong {
-            color: #002855;
-            font-size: 17px;
-        }
-        .benefits-section {
+        .feature-box {
             background-color: #f8fbff;
-            padding: 30px;
+            border-left: 5px solid #0056b3;
+            padding: 25px;
             margin: 30px 0;
-            border-radius: 10px;
-            border: 1px solid #ddecfa;
+            border-radius: 4px;
         }
-        .benefits-section h3 {
+        .feature-item {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 500;
             color: #002855;
-            font-size: 20px;
-            margin-bottom: 20px;
-            text-align: center;
         }
-        .benefit-item {
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-            font-size: 15px;
-        }
-        .benefit-item:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
+        .feature-item span {
             color: #0056b3;
-            font-weight: bold;
-            font-size: 18px;
+            margin-right: 10px;
+        }
+        .cta-container {
+            text-align: center;
+            padding: 20px 0 40px;
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            color: #ffffff !important;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
         }
         .footer {
-            background-color: #001a35;
-            color: #ffffff;
-            padding: 35px 20px;
             text-align: center;
-            font-size: 13px;
-            line-height: 1.8;
+            padding: 30px;
+            font-size: 12px;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .footer strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 10px;
         }
         .footer a {
-            color: #4da3ff;
-            text-decoration: none;
-        }
-        .footer .brand-info {
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        @media screen and (max-width: 600px) {
-            .content { padding: 30px 20px; }
-            .content h1 { font-size: 22px; }
+            color: #0056b3;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="header">
-        <img src="https://drive.google.com/uc?export=view&id=1hmzx8ohjOzZGDbliG_bg-3RUTCvkkYzO" alt="Building Markets Logo">
-    </div>
-
-    <div class="banner">
-        <img src="https://drive.google.com/uc?export=view&id=1dEIktn3gfyi2KPMejIpVKyIFMO6c_0jL" alt="Ser Digital - Ruta 65">
-    </div>
-
-    <div class="content">
-        <h1>Presta atención</h1>
-        
-        <p>Muchos negocios ya están en digital, pero pocos realmente lo tienen organizado. Herramientas sueltas, procesos manuales, acciones aisladas para mantener una venta.</p>
-        
-        <p>Se aplica el marketing pero no siempre se ejecuta con estructura. Por eso, <strong>Building Markets</strong> creó <strong>Ruta 65</strong> dentro del programa <strong>Ser digital</strong>.</p>
-
-        <div class="benefits-section">
-            <h3>Una ruta de trabajo diseñada para:</h3>
-            <div class="benefit-item">Fortalezcan su comunicación.</div>
-            <div class="benefit-item">Mejoren sus procesos comerciales.</div>
-            <div class="benefit-item">Integren herramientas digitales y pasen de la teoría a la implementación.</div>
+<div class="wrapper">
+    <div class="main-container">
+        <div class="hero-banner">
+            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/f8f98770147b42117044e0b0ea2af8a6112ac51836682aff0a4749e684d27149.png" alt="Building Markets Logo">
+            <p class="hero-title">Ruta 65: Ser Digital</p>
         </div>
 
-        <p>Este ciclo trae una nueva etapa para los participantes. Un proceso práctico que consolida todo lo aprendido y en un encuentro presencial del cual pronto podrás conocer más.</p>
+        <div class="content">
+            <h2>Presta atención</h2>
+            <p>Muchos negocios ya están en digital, pero pocos realmente lo tienen organizado. Herramientas sueltas, procesos manuales, acciones aisladas para mantener una venta.</p>
+            
+            <p>Se aplica el marketing pero no siempre se ejecuta con estructura. Por eso, <strong>Building Markets</strong> creó <strong>Ruta 65</strong> dentro del programa <strong>Ser digital</strong>.</p>
 
-        <div class="highlight-box">
-            <strong>¿Qué sigue ahora?</strong><br>
-            En los próximos días te contaremos cómo avanzar. Por ahora, podemos decirte que estaremos acompañando tu proceso con plataformas como <strong>GoHighLevel</strong> y <strong>Google Workspace</strong>.
+            <div class="feature-box">
+                <div class="feature-item"><span>✓</span> Fortalezcan su comunicación</div>
+                <div class="feature-item"><span>✓</span> Mejoren sus procesos comerciales</div>
+                <div class="feature-item"><span>✓</span> Integren herramientas digitales</div>
+            </div>
+
+            <p>Este ciclo trae una nueva etapa. Un proceso práctico que consolida todo lo aprendido y te prepara para plataformas como <strong>GoHighLevel</strong> y <strong>Google Workspace</strong>.</p>
         </div>
 
-        <p style="text-align: center; font-style: italic;">Puedes estar atento a estos correos, porque digitalizarse no es aprender más, es trabajar mejor.</p>
-    </div>
-
-    <div class="footer">
-        <div class="brand-info">
-            Building Markets | Ruta 65 dentro del programa Ser digital
+        <div class="cta-container">
+            <a href="https://ser-digital.mypimes.co/ruta-65" class="btn-primary">QUIERO CONOCER MÁS</a>
         </div>
-        <p>
+
+        <div class="footer">
+            <strong>Building Markets | Ruta 65 dentro del programa Ser digital</strong>
             [COMPANY_FULL_ADDRESS]<br>
-            Has recibido este correo porque formas parte de nuestra comunidad.<br>
-            <a href="[UNSUBSCRIBE_URL]">Darse de baja</a>
-        </p>
+            <br>
+            Digitalizarse no es aprender más, es trabajar mejor.<br>
+            <a href="[UNSUBSCRIBE_URL]">Darse de baja de esta lista</a>
+        </div>
     </div>
 </div>
 
