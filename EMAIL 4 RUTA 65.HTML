@@ -11,12 +11,18 @@
         .wrapper { width: 100%; background-color: #f4f7f9; padding: 20px 0; }
         .main-container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
         
-        /* Logo Header - Espacio reducido */
-        .logo-header { padding: 20px 20px 5px 20px; text-align: center; background-color: #ffffff; }
-        .logo-header img { max-width: 180px; height: auto; }
+        /* Nuevo Encabezado - Banner solicitado con difuminado lateral */
+        .top-banner-container { width: 100%; text-align: center; background-color: #ffffff; line-height: 0; padding-top: 10px; }
+        .top-banner-img { 
+            width: 100%; 
+            max-width: 600px; 
+            height: auto; 
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
 
-        /* Contenido - Margen superior ajustado */
-        .content { padding: 10px 35px 20px 35px; color: #333333; }
+        /* Contenido - Margen superior ajustado para cercanía al banner */
+        .content { padding: 15px 35px 20px 35px; color: #333333; }
         .content h2.saludo { font-size: 24px; color: #003a70; margin-top: 0; margin-bottom: 15px; text-align: center; }
         
         .content p { font-size: 16px; line-height: 1.7; margin-bottom: 18px; }
@@ -27,20 +33,11 @@
         .exec-icon { font-size: 24px; margin-right: 15px; min-width: 35px; text-align: center; }
         .exec-text { font-size: 15px; color: #2c3e50; font-weight: 500; }
 
-        .cta-container { text-align: center; padding: 15px 0 35px; }
+        .cta-container { text-align: center; padding: 15px 0 40px; }
         .btn-primary { background-color: #0056b3; color: #ffffff !important; padding: 16px 45px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 16px; display: inline-block; box-shadow: 0 4px 15px rgba(0,86,179,0.2); }
 
-        /* Banner inferior actualizado con difuminado lateral */
-        .bottom-banner-container { width: 100%; text-align: center; background-color: #ffffff; line-height: 0; }
-        .bottom-banner-img { 
-            width: 100%; 
-            max-width: 600px; 
-            height: auto; 
-            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-        }
-
-        .footer { text-align: center; padding: 30px; font-size: 12px; color: #666666; line-height: 1.6; }
+        /* Pie de página limpio (sin banner previo) */
+        .footer { text-align: center; padding: 30px; font-size: 12px; color: #666666; line-height: 1.6; border-top: 1px solid #f0f0f0; }
     </style>
 </head>
 <body>
@@ -48,8 +45,8 @@
 <div class="wrapper">
     <div class="main-container">
         
-        <div class="logo-header">
-            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/696fdf5041fb81948fd84016.png" alt="Building Markets Logo">
+        <div class="top-banner-container">
+            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69ab0e16b2a2747065c7c794.png" class="top-banner-img" alt="Ser Digital Header">
         </div>
 
         <div class="content">
@@ -85,10 +82,6 @@
 
         <div class="cta-container">
             <a href="https://ruta65.mypimes.co/cali" class="btn-primary">CONOCE EL CRONOGRAMA EN CALI</a>
-        </div>
-
-        <div class="bottom-banner-container">
-            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69ab0e16b2a2747065c7c794.png" class="bottom-banner-img" alt="DigitaLAB Decoración">
         </div>
 
         <div class="footer">
