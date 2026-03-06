@@ -38,11 +38,11 @@
             height: auto;
         }
         .content {
-            padding: 40px 35px;
+            padding: 40px 35px 20px 35px;
             color: #333333;
         }
         .content h2 {
-            font-size: 24px;
+            font-size: 26px;
             color: #003a70;
             margin-bottom: 20px;
             line-height: 1.3;
@@ -80,19 +80,25 @@
             font-size: 16px;
             display: inline-block;
         }
+        /* Sección Final antes del Banner */
+        .pre-footer-text {
+            text-align: center;
+            padding: 0 35px 20px 35px;
+            color: #003a70;
+            font-weight: 600;
+            font-size: 18px;
+        }
         /* Banner inferior con difuminado */
         .bottom-banner-container {
             width: 100%;
             text-align: center;
             background-color: #ffffff;
-            position: relative;
             line-height: 0;
         }
         .bottom-banner-img {
             width: 100%;
             max-width: 600px;
             height: auto;
-            /* Efecto de difuminado lateral */
             mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
             -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         }
@@ -105,11 +111,12 @@
         }
         .footer-line {
             font-weight: 600;
-            color: #003a70;
-            margin-bottom: 10px;
+            color: #333333;
+            margin-bottom: 8px;
         }
         .footer a {
             color: #0056b3;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -122,7 +129,7 @@
         </div>
 
         <div class="content">
-            <h2>Ruta 65 dentro del programa Ser Digital</h2>
+            <h2>Presta atención</h2>
             
             <p>Muchos negocios ya están en digital, pero pocos realmente lo tienen organizado. Herramientas sueltas, procesos manuales, acciones aisladas para mantener una venta.</p>
             
@@ -134,11 +141,15 @@
                 <span class="feature-item">✓ Integren herramientas digitales</span>
             </div>
 
-            <p>Este ciclo trae una nueva etapa práctica que consolida todo lo aprendido. Pronto conocerás más sobre nuestro encuentro presencial y el acompañamiento con <strong>GoHighLevel</strong> y <strong>Google Workspace</strong>.</p>
+            <p>Este ciclo trae una nueva etapa práctica que consolida todo lo aprendido. Pronto conocerás más sobre nuestro encuentro presencial y el acompañamiento con plataformas como <strong>GoHighLevel</strong> y <strong>Google Workspace</strong>.</p>
         </div>
 
         <div class="cta-container">
             <a href="https://ser-digital.mypimes.co/ruta-65" class="btn-primary">QUIERO CONOCER MÁS</a>
+        </div>
+
+        <div class="pre-footer-text">
+            Ruta 65 dentro del programa Ser Digital
         </div>
 
         <div class="bottom-banner-container">
@@ -147,9 +158,13 @@
 
         <div class="footer">
             <div class="footer-line">Building Markets | Ser Digital</div>
-            [COMPANY_FULL_ADDRESS]<br>
-            Digitalizarse no es aprender más, es trabajar mejor.<br><br>
-            <a href="[UNSUBSCRIBE_URL]">Darse de baja de esta lista</a>
+            <div style="margin-bottom: 10px;">
+                [COMPANY_FULL_ADDRESS]
+            </div>
+            <div>
+                Digitalizarse no es aprender más, es trabajar mejor.<br>
+                <a href="[UNSUBSCRIBE_URL]">Darse de baja de esta lista</a>
+            </div>
         </div>
     </div>
 </div>
