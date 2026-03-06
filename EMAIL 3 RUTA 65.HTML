@@ -11,15 +11,21 @@
         .wrapper { width: 100%; background-color: #f4f7f9; padding: 20px 0; }
         .main-container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
         
-        /* 1. Logo BUMA fondo blanco */
-        .logo-header { padding: 30px; text-align: center; background-color: #ffffff; }
-        .logo-header img { max-width: 220px; height: auto; }
+        /* Banner superior con difuminado lateral */
+        .top-banner-container { width: 100%; text-align: center; background-color: #ffffff; line-height: 0; padding-top: 10px; }
+        .top-banner-img { 
+            width: 100%; 
+            max-width: 600px; 
+            height: auto; 
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
 
-        .content { padding: 10px 35px 20px 35px; color: #333333; }
-        .content h2 { font-size: 26px; color: #003a70; margin-bottom: 20px; line-height: 1.3; text-align: center; }
+        .content { padding: 20px 35px 20px 35px; color: #333333; }
+        .content h2 { font-size: 26px; color: #003a70; margin-top: 0; margin-bottom: 20px; line-height: 1.3; text-align: center; }
         .content p { font-size: 16px; line-height: 1.7; margin-bottom: 18px; }
 
-        /* 2 y 3. Ciudades con fotos proporcionadas */
+        /* Ciudades con fotos */
         .city-grid { display: flex; justify-content: space-between; margin: 30px 0; }
         .city-item { width: 48%; border-radius: 12px; overflow: hidden; background-color: #ffffff; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; }
         .city-photo { width: 100%; height: 140px; object-fit: cover; display: block; }
@@ -34,7 +40,7 @@
         .cta-container { text-align: center; padding: 10px 0 30px; }
         .btn-primary { background-color: #0056b3; color: #ffffff !important; padding: 16px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 16px; display: inline-block; transition: background 0.3s ease; }
 
-        /* Banner inferior con difuminado lateral */
+        /* Banner inferior */
         .bottom-banner-container { width: 100%; text-align: center; background-color: #ffffff; line-height: 0; }
         .bottom-banner-img { 
             width: 100%; 
@@ -52,12 +58,12 @@
 <div class="wrapper">
     <div class="main-container">
         
-        <div class="logo-header">
-            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/696fdf5041fb81948fd84016.png" alt="Building Markets Logo">
+        <div class="top-banner-container">
+            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69ab0e16b2a2747065c7c794.png" class="top-banner-img" alt="Ser Digital Header">
         </div>
 
         <div class="content">
-            <h2>Hola [FNAME]</h2>
+            <h2>Hola</h2>
             <p>Muchos empresarios ya no necesitan más cursos, <strong>necesitan resultados</strong>. Porque aprender sin ejecutar deja las ideas solo en el papel.</p>
             
             <p>Por eso diseñamos <strong>DigitaLAB</strong>, un encuentro presencial pensado para que avances operativamente:</p>
