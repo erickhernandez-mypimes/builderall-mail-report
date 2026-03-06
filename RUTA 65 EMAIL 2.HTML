@@ -27,18 +27,23 @@
             overflow: hidden;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
-        /* Header con Logo */
-        .hero-banner {
-            background: linear-gradient(135deg, #001a35 0%, #003a70 100%);
-            padding: 40px 20px;
+        /* 2. Banner al inicio con difuminado lateral */
+        .top-banner-container {
+            width: 100%;
             text-align: center;
+            background-color: #ffffff;
+            line-height: 0;
+            padding-top: 20px;
         }
-        .hero-banner img {
-            max-width: 200px;
+        .top-banner-img {
+            width: 100%;
+            max-width: 600px;
             height: auto;
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         }
         .content {
-            padding: 40px 35px 20px 35px;
+            padding: 30px 35px 20px 35px;
             color: #333333;
         }
         .content h2 {
@@ -53,21 +58,18 @@
             line-height: 1.7;
             margin-bottom: 20px;
         }
-        /* Checklist con Iconos */
-        .platforms-container {
-            margin: 30px 0;
-        }
+        /* Checklist de Plataformas */
         .platform-item {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             background-color: #f8fbff;
             padding: 15px;
             border-radius: 8px;
             border-left: 4px solid #0056b3;
         }
         .platform-icon {
-            font-size: 24px;
+            font-size: 22px;
             margin-right: 15px;
             min-width: 30px;
             text-align: center;
@@ -75,7 +77,6 @@
         .platform-text {
             font-size: 14px;
             color: #2c3e50;
-            line-height: 1.4;
         }
         .platform-text strong {
             color: #003a70;
@@ -83,7 +84,7 @@
         }
         .cta-container {
             text-align: center;
-            padding: 10px 0 30px;
+            padding: 20px 0 40px;
         }
         .btn-primary {
             background-color: #0056b3;
@@ -95,39 +96,29 @@
             font-size: 16px;
             display: inline-block;
         }
-        /* Texto del programa antes del banner */
+        /* 1. Logo Building Markets (BUMA) al final con fondo azul */
+        .bottom-logo-banner {
+            background: linear-gradient(135deg, #001a35 0%, #003a70 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .bottom-logo-banner img {
+            max-width: 180px;
+            height: auto;
+        }
         .pre-footer-text {
             text-align: center;
-            padding: 0 35px 20px 35px;
+            padding: 20px 35px;
             color: #003a70;
             font-weight: 600;
-            font-size: 18px;
-        }
-        /* Banner inferior con difuminado lateral solicitado */
-        .bottom-banner-container {
-            width: 100%;
-            text-align: center;
-            background-color: #ffffff;
-            line-height: 0;
-        }
-        .bottom-banner-img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            font-size: 17px;
         }
         .footer {
             text-align: center;
-            padding: 30px;
+            padding: 25px;
             font-size: 12px;
             color: #666666;
             background-color: #ffffff;
-        }
-        .footer-line {
-            font-weight: 600;
-            color: #333333;
-            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -135,49 +126,36 @@
 
 <div class="wrapper">
     <div class="main-container">
-        <div class="hero-banner">
-            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/f8f98770147b42117044e0b0ea2af8a6112ac51836682aff0a4749e684d27149.png" alt="Building Markets Logo">
+        
+        <div class="top-banner-container">
+            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69a85c9d1d4c8d9d501bdf8a.png" class="top-banner-img" alt="Ser Digital Header">
         </div>
 
         <div class="content">
             <h2>Hola</h2>
             
-            <p>Emprender hoy no es solo tener redes o una página web. Es saber usar las herramientas correctas, integrarlas y convertirlas en procesos que realmente funcionen sobre lo que nos interesa: <strong>¡Las ventas!</strong></p>
+            <p>Emprender hoy no es solo tener redes o una página web. Es saber usar las herramientas correctas e integrarlas en procesos que realmente funcionen para tus <strong>ventas</strong>.</p>
             
-            <p>En este nuevo ciclo de <strong>Ruta 65 dentro del programa Ser digital</strong> y desde el acompañamiento de <strong>Building Markets</strong>, te entregaremos un paso a paso con las plataformas líderes:</p>
+            <p>En este ciclo de <strong>Ruta 65</strong>, te entregaremos un paso a paso con las plataformas que usan hoy las empresas para operar mejor:</p>
 
-            <div class="platforms-container">
-                <div class="platform-item">
-                    <div class="platform-icon">📩</div>
-                    <div class="platform-text">
-                        <strong>Google Workspace</strong>
-                        Correo, organización y trabajo colaborativo.
-                    </div>
-                </div>
-                <div class="platform-item">
-                    <div class="platform-icon">⚙️</div>
-                    <div class="platform-text">
-                        <strong>Go High Level</strong>
-                        Automatización y gestión comercial avanzada.
-                    </div>
-                </div>
-                <div class="platform-item">
-                    <div class="platform-icon">📣</div>
-                    <div class="platform-text">
-                        <strong>Comunicación y Marketing</strong>
-                        Herramientas digitales para potenciar tu alcance.
-                    </div>
-                </div>
-                <div class="platform-item">
-                    <div class="platform-icon">🌐</div>
-                    <div class="platform-text">
-                        <strong>Integración Digital</strong>
-                        Procesos para conectar web, flujos y seguimiento.
-                    </div>
-                </div>
+            <div class="platform-item">
+                <div class="platform-icon">📩</div>
+                <div class="platform-text"><strong>Google Workspace</strong>Correo, organización y trabajo colaborativo.</div>
+            </div>
+            <div class="platform-item">
+                <div class="platform-icon">⚙️</div>
+                <div class="platform-text"><strong>Go High Level</strong>Automatización y gestión comercial.</div>
+            </div>
+            <div class="platform-item">
+                <div class="platform-icon">📣</div>
+                <div class="platform-text"><strong>Comunicación Digital</strong>Herramientas y marketing estratégico.</div>
+            </div>
+            <div class="platform-item">
+                <div class="platform-icon">🌐</div>
+                <div class="platform-text"><strong>Integración de Procesos</strong>Flujos, web y seguimiento de clientes.</div>
             </div>
 
-            <p>No se trata solo de conocerlas, se trata de aprender a usarlas contigo y para tu negocio. Conoce más aquí y revisa todo lo que incluye esta nueva etapa.</p>
+            <p>No se trata solo de conocerlas, se trata de aprender a usarlas para tu negocio. Revisa todo lo que incluye esta nueva etapa.</p>
         </div>
 
         <div class="cta-container">
@@ -188,18 +166,14 @@
             Ruta 65 dentro del programa Ser Digital
         </div>
 
-        <div class="bottom-banner-container">
-            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69a85c9d1d4c8d9d501bdf8a.png" class="bottom-banner-img" alt="Decoración Ser Digital">
+        <div class="bottom-logo-banner">
+            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/f8f98770147b42117044e0b0ea2af8a6112ac51836682aff0a4749e684d27149.png" alt="Building Markets Logo">
         </div>
 
         <div class="footer">
-            <div class="footer-line">Building Markets | Ser Digital</div>
-            <div style="margin-top: 10px;">
-                [COMPANY_FULL_ADDRESS] [UNSUBSCRIBE_URL]
-            </div>
-            <div style="margin-top: 15px; font-style: italic;">
-                Digitalizarse no es aprender más, es trabajar mejor.
-            </div>
+            <div style="font-weight: 600; color: #333333; margin-bottom: 8px;">Building Markets | Ser Digital</div>
+            [COMPANY_FULL_ADDRESS] [UNSUBSCRIBE_URL]
+            <p style="margin-top: 15px; font-style: italic;">Digitalizarse no es aprender más, es trabajar mejor.</p>
         </div>
     </div>
 </div>
