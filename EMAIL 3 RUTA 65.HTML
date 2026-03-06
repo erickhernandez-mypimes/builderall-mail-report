@@ -11,31 +11,31 @@
         .wrapper { width: 100%; background-color: #f4f7f9; padding: 20px 0; }
         .main-container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
         
-        /* Logo BUMA fondo blanco */
+        /* 1. Logo BUMA fondo blanco */
         .logo-header { padding: 30px; text-align: center; background-color: #ffffff; }
-        .logo-header img { max-width: 180px; height: auto; }
+        .logo-header img { max-width: 220px; height: auto; }
 
         .content { padding: 10px 35px 20px 35px; color: #333333; }
         .content h2 { font-size: 26px; color: #003a70; margin-bottom: 20px; line-height: 1.3; text-align: center; }
         .content p { font-size: 16px; line-height: 1.7; margin-bottom: 18px; }
 
-        /* Ciudades con Fotos */
+        /* 2 y 3. Ciudades con fotos proporcionadas */
         .city-grid { display: flex; justify-content: space-between; margin: 30px 0; }
-        .city-item { width: 48%; border-radius: 8px; overflow: hidden; background-color: #f8fbff; border: 1px solid #e1e8ed; text-align: center; }
-        .city-photo { width: 100%; height: 120px; object-fit: cover; }
-        .city-label { padding: 10px; font-weight: 700; color: #003a70; font-size: 14px; text-transform: uppercase; }
+        .city-item { width: 48%; border-radius: 12px; overflow: hidden; background-color: #ffffff; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; }
+        .city-photo { width: 100%; height: 140px; object-fit: cover; display: block; }
+        .city-label { padding: 12px; font-weight: 700; color: #003a70; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
 
         /* Checklist de compromiso */
-        .commitment-box { border: 2px solid #0056b3; padding: 25px; border-radius: 8px; margin: 25px 0; }
+        .commitment-box { border: 2px solid #0056b3; padding: 25px; border-radius: 8px; margin: 25px 0; background-color: #fcfdfe; }
         .commitment-title { font-weight: 700; font-size: 18px; color: #002855; margin-bottom: 15px; }
-        .commitment-item { margin-bottom: 10px; font-size: 14px; color: #333333; display: block; }
-        .commitment-item span { color: #0056b3; font-weight: bold; margin-right: 8px; }
+        .commitment-item { margin-bottom: 10px; font-size: 14px; color: #333333; display: flex; align-items: center; }
+        .commitment-item span { color: #0056b3; font-weight: bold; margin-right: 10px; font-size: 18px; }
 
         .cta-container { text-align: center; padding: 10px 0 30px; }
-        .btn-primary { background-color: #0056b3; color: #ffffff !important; padding: 16px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 16px; display: inline-block; }
+        .btn-primary { background-color: #0056b3; color: #ffffff !important; padding: 16px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 16px; display: inline-block; transition: background 0.3s ease; }
 
         /* Banner inferior con difuminado lateral */
-        .bottom-banner-container { width: 100%; text-align: center; background-color: #ffffff; line-height: 0; padding-top: 10px; }
+        .bottom-banner-container { width: 100%; text-align: center; background-color: #ffffff; line-height: 0; }
         .bottom-banner-img { 
             width: 100%; 
             max-width: 600px; 
@@ -44,7 +44,7 @@
             -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         }
 
-        .footer { text-align: center; padding: 30px; font-size: 12px; color: #666666; }
+        .footer { text-align: center; padding: 30px; font-size: 12px; color: #666666; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -53,7 +53,7 @@
     <div class="main-container">
         
         <div class="logo-header">
-            <img src="https://drive.google.com/uc?export=view&id=1msRzGCNa4L8xcsWqgEip_Ae1Kv01OgDE" alt="Building Markets Logo">
+            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/696fdf5041fb81948fd84016.png" alt="Building Markets Logo">
         </div>
 
         <div class="content">
@@ -64,11 +64,11 @@
 
             <div class="city-grid">
                 <div class="city-item">
-                    <img src="http://googleusercontent.com/image_collection/image_retrieval/10197706086845946909_0" class="city-photo" alt="Bogotá">
+                    <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69ab03506805aa3063b98872.png" class="city-photo" alt="Bogotá">
                     <div class="city-label">Bogotá</div>
                 </div>
                 <div class="city-item">
-                    <img src="http://googleusercontent.com/image_collection/image_retrieval/8025906443604817148_0" class="city-photo" alt="Cali">
+                    <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69ab03508f1e97e842f6134f.png" class="city-photo" alt="Cali">
                     <div class="city-label">Cali</div>
                 </div>
             </div>
