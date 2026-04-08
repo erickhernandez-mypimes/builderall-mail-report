@@ -23,63 +23,87 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
+        /* Header ultra-delgado sin portada */
         .header {
-            padding: 12px 20px;
+            padding: 15px 20px;
             text-align: center;
             background-color: #F4F7F9;
+            border-bottom: 1px solid #f0f0f0;
         }
         .header img {
             width: auto;
-            max-width: 150px;
+            max-width: 130px;
             height: auto;
             display: block;
             margin: 0 auto;
-        }
-        /* Sección del Mapa */
-        .map-container {
-            width: 100%;
-            background-color: #FDF5ED;
-            text-align: center;
-        }
-        .map-container a img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            display: block;
         }
         .content {
             padding: 40px 35px;
             color: #111111;
         }
-        .address-box {
-            background-color: #F4F7F9;
-            padding: 25px;
-            margin: 25px 0;
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        /* Sección de Ubicación ULTRA-CLARA */
+        .clear-location-box {
+            background-color: #FDF5ED; /* Fondo beige muy suave para resaltar */
+            padding: 30px;
+            margin: 30px 0;
             border-radius: 12px;
             text-align: center;
-            border: 1px dashed #d18535;
+            border: 2px solid #d18535; /* Borde naranja institucional */
         }
-        .address-text {
+        .location-header {
+            font-size: 14px;
+            font-weight: 700;
+            color: #d18535;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .building-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111111; /* Negro para máxima claridad */
+            display: block;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+        .street-address {
             font-size: 18px;
             font-weight: 600;
             color: #111111;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
+        .suite-number {
+            font-size: 16px;
+            color: #555555;
+            background-color: #ffffff;
+            padding: 8px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
         .cta-container {
             text-align: center;
-            margin: 30px 0;
+            margin: 35px 0;
         }
         .cta-button {
             display: inline-block;
-            background-color: #d18535;
+            background-color: #111111; /* Botón negro para sobriedad */
             color: #ffffff;
             padding: 18px 45px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
             font-size: 16px;
-            box-shadow: 0 4px 10px rgba(209, 133, 53, 0.3);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .whatsapp-link {
             display: inline-flex;
@@ -118,6 +142,8 @@
 
         @media screen and (max-width: 600px) {
             .content { padding: 30px 20px; }
+            .clear-location-box { padding: 20px; }
+            .building-name { font-size: 20px; }
             .cta-button { width: 90%; padding: 18px 10px; box-sizing: border-box; }
         }
     </style>
@@ -128,28 +154,25 @@
             <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/e441235830acb12c2020ba75f5bc7629fe42896e9e39436d490d39f191a0af8d.png" alt="Fisioterapia Avanzada">
         </div>
 
-        <div class="map-container">
-            <a href="https://maps.app.goo.gl/ChIJeRZOaFaFP44R2UTNp67lVug" target="_blank">
-                <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69d57d54a7dcb4cff026e5b9.png" alt="Ver ubicación en el mapa">
-            </a>
-        </div>
-
         <div class="content">
             <p>Hola <strong>[FNAME]</strong> 👋</p>
-            <p>Queremos que tu experiencia en <strong>Fisio Avanzada</strong> comience desde antes de cruzar nuestra puerta.</p>
+            <p>Queremos que tu experiencia en <strong>Fisio Avanzada</strong> comience de la forma más sencilla. Para que no pierdas tiempo buscando direcciones, hemos preparado la ruta exacta a nuestro consultorio:</p>
             
-            <p>Para que no pierdas tiempo buscando direcciones, puedes hacer clic en el siguiente botón para abrir la ruta directamente en <strong>Google Maps o Waze</strong>:</p>
-
-            <div class="address-box">
-                <span class="address-text">Edificio El Bosque, Consultorio 913</span>
-                <p style="margin:0; font-size:14px; color:#7F8C8D;">Calle 134 # 7B - 83, Bogotá</p>
+            <div class="clear-location-box">
+                <span class="location-header">📍 Nuestra Ubicación Exacta:</span>
+                <span class="building-name">📍 **Edificio El Bosque**</span>
+                <span class="street-address">📍 **Calle 134 # 7B - 83**</span>
+                Bogotá, Colombia <br>
+                <span class="suite-number">Consultorio 913</span>
             </div>
+
+            <p style="text-align: center;">Haz clic en el siguiente botón para abrir la ruta directamente en <strong>Google Maps o Waze</strong>:</p>
 
             <div class="cta-container">
-                <a href="https://maps.app.goo.gl/ChIJeRZOaFaFP44R2UTNp67lVug" class="cta-button" target="_blank">📍 VER RUTA Y CÓMO LLEGAR AQUÍ</a>
+                <a href="http://googleusercontent.com/maps.google.com/3" class="cta-button" target="_blank">🗺️ ABRIR EN GOOGLE MAPS / WAZE</a>
             </div>
 
-            <p style="text-align: center;">Si te pierdes o necesitas indicaciones personalizadas, estamos a un toque de distancia:</p>
+            <p style="text-align: center; margin-top: 30px;">Si necesitas ayuda adicional o indicaciones personalizadas, estamos a un toque de distancia:</p>
             
             <div style="text-align: center;">
                 <a href="https://api.whatsapp.com/send?phone=573228938355&text=Hola,%20necesito%20ayuda%20para%20llegar%20al%20consultorio" class="whatsapp-link">
