@@ -23,13 +23,14 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .header {
-    padding: 40px 20px;
+    padding: 0; /* Ajustado para que la imagen ocupe todo el ancho */
     text-align: center;
-    background-color: #4c2683; /* Morado solicitado */
+    background-color: #4c2683; /* Mantenemos el fondo morado por si la imagen tarda en cargar */
 }
 .header img {
-    max-width: 200px;
+    width: 100%; /* Imagen de portada a ancho completo */
     height: auto;
+    display: block; /* Elimina espacio en blanco inferior */
 }
 .content {
     padding: 40px 35px;
@@ -114,7 +115,7 @@ body {
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://global-files-nginx.builderall.com/e85d8faa-01d1-4a45-96a9-d4d136aecd0c/4d75a0b0f9bfd339c02430d831150ca526dde0dedc8ad6d09d9500f7dc6a5ca3.png" alt="Propulsor">
+            <img src="https://assets.cdn.filesafe.space/TflE3Je6BY5vwRAtoeGL/media/69e244b2c7fc1fb77676b752.png" alt="Propulsor Latinoamérica - Portada">
         </div>
 
         <div class="content">
